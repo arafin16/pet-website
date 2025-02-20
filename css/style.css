@@ -1,0 +1,22 @@
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+  
+.spinner-border {
+    border-top-color: transparent;
+    border-right-color: gray;
+    border-bottom-color: gray;
+    border-left-color: gray;
+}
+
+.category-btn.active{
+    background-color: rgba(14, 122, 129, 0.20);
+    color: rgba(19, 19, 19, 1);
+}
+
+.adopt-btn:disabled{
+    background-color: #d3d3d3;
+    color: #a9a9a9;
+    border: 1px solid #a9a9a9;
+}

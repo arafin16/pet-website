@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <link rel="stylesheet" href="css/style.css">
+<link href="css/full.min.css" rel="stylesheet" type="text/css"><script src="https://cdn.tailwindcss.com"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"><link href="css/remixicon.css" rel="stylesheet"><script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                    'color-1': 'rgba(19, 19, 19, 1)',
+                    'color-2': 'rgba(19, 19, 19, 0.6)',
+                    'color-3': 'rgba(14, 122, 129, 1)',
+                    'color-4': 'rgba(14, 122, 129, 0.20)',
+                    'color-5': 'rgba(14, 122, 129, 0.10)',
+                    'color-6': '#131313',
+                    'color-7': 'rgba(255, 255, 255, 0.6)',
+                    'color-8': 'rgba(255, 255, 255, 0.05)',
+                },
+                fontFamily: {
+                    lato: ['Lato', 'sans-serif'],
+                }
+            }
+        }
+    }
+</script></head>
+<!-- daisy ui cdn  -->
+
+
+<!-- google font cdn  -->
+
+
+
+<!-- remix icon cdn  -->
+
+
+
+<body class="font-lato">
+
+    <header class="">
+        <div class="w-4/5 mx-auto navbar-container pt-5">
+            <nav class="flex justify-between items-center">
+                <div class="navbar flex gap-2 justify-center items-center">
+                    <div class="navbar-start gap-2">
+                        <div>
+                            <img src="images/logo.webp" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-xl md:text-2xl lg:text-3xl font-black text-color-1">Peddy</h1>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal flex gap-10 text-color-2">
+                            <li><a class="text-color-1 text-base font-normal">Home</a></li>
+                            <li><a class="text-color-1 text-base font-normal">Shop</a></li>
+                            <li><a class="text-color-1 text-base font-normal">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-icon">
+                            <i class="ri-user-line border text-lg md:text-xl lg:text-2xl rounded-full p-2 border-color-4"></i>
+                        </div>
+                        <div class="dropdown dropdown-end lg:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <i class="ri-menu-line text-lg md:text-xl lg:text-2xl border rounded-full px-2 py-1"></i>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] shadow">
+                                <li><a class="text-color-1 text-base font-normal">Home</a></li>
+                                <li><a class="text-color-1 text-base font-normal">Shop</a></li>
+                                <li><a class="text-color-1 text-base font-normal">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-container flex justify-center items-center pt-14">
+            <div class="hero-content flex flex-col justify-center items-center">
+                <div class="hero-text flex flex-col justify-center items-center gap-6 text-center">
+                    <h3 class="text-lg md:text-xl lg:text-2xl font-bold"><span class="text-color-2">Bringing Families
+                            Together</span> ❤️‍🔥
+                    </h3>
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl  font-black">Your Path to Adoption<br> Starts Here</h1>
+                    <p class="text-color-1 w-3/4">Your journey to adoption starts here. Explore your options and find
+                        the support you need to welcome a child into your family.</p>
+                    <a href="#adopt"><button class="text-base md:text-lg lg:text-xl font-bold bg-color-3 text-white rounded-xl px-8 py-4">View
+                            More
+                        </button></a>
+                </div>
+                <div class="hero-img">
+                    <img src="images/pet.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div id="adopt" class="flex flex-col justify-center items-center text-center">
+            <h1 class="text-color-1 text-2xl md:text-3xl lg:text-4xl font-black">Adopt Your Best Friend</h1>
+            <p class="text-color-2 pt-6 w-3/4 lg:w-2/4">Explore a variety of loving pets waiting for a new home, and
+                find the perfect companion to bring joy, loyalty, and unconditional love into your life.</p>
+        </div>
+
+        <div id="categories" class="mt-6 lg:mt-12 gap-4 md:gap-8 lg:gap-12 justify-center grid grid-cols-2 lg:grid-cols-4 w-3/5 mx-auto">
+        </div>
+
+        <div class="w-4/5  mx-auto flex justify-between items-center mt-4">
+            <h2 class="text-lg md:text-xl lg:text-2xl font-black">Best Deal For you</h2>
+            <button id="sortByPrice" class="text-white bg-color-3 text-base md:text-lg lg:text-xl px-4 lg:px-8 py-2 lg:py-4 rounded-xl">Sort
+                by Price
+            </button>
+        </div>
+
+        <div class="flex justify-between gap-2 lg:gap-4 lg:w-11/12 mx-auto">
+            <section id="pets" class="w-3/4 lg:w-4/5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
+
+            </section>
+
+            <div class="w-1/4 lg:w-1/5 mx-auto mt-10">
+                <div id="likedPets" class="grid grid-cols-1 lg:grid-cols-2 gap-1 md:gap-2 lg:gap-4 border rounded-xl">
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+    <dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content"></div>
+            <div class="modal-action justify-center">
+                <form method="dialog">
+                    <button class="w-[385px] lg:w-[465px] text-lg font-bold text-color-3 py-3 border border-color-4 bg-color-5 rounded-lg">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <div id="loadingSpinner" class="hidden fixed inset-0 flex justify-center items-center bg-gray-200 bg-opacity-75 z-50">
+        <div class="spinner-border animate-spin inline-block w-12 h-12 border-4 rounded-full">
+        </div>
+    </div>
+
+    <div id="adoptModal" class="hidden fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg text-center flex flex-col justify-center items-center">
+            <img src="images/handshake.png" alt="">
+            <h2 class="text-5xl font-black mb-4">Congrats</h2>
+            <p class="font-semibold">Adoption process is starting for your pet</p>
+            <p id="countdownText" class="text-5xl font-bold"></p>
+            <button id="closeModal" class="mt-4 text-color-3 border-color-4 bg-color-5 rounded-lg px-4 py-2">Close</button>
+        </div>
+    </div>
+
+    <footer class="bg-color-6 w-full">
+        <div class="w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-24 gap-12">
+            <div>
+                <div class="flex items-center gap-3">
+                    <div>
+                        <img src="images/logo.webp" alt="">
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl lg:text-3xl font-black text-white">Peddy</h1>
+                    </div>
+                </div>
+                <div class="mt-6 text-white flex flex-col gap-2">
+                    <p>Location: av. Washington 165, NY CA 54003</p>
+                    <p>Phone: +31 85 964 47 25</p>
+                    <p>Email: info@yourdomain.com</p>
+                    <p>Openings hours: 9.00 AM - 5.00 PM</p>
+                </div>
+                <div class="mt-6 flex gap-6">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C24.8365 0 32 7.16346 32 16C32 24.8365 24.8365 32 16 32C7.16346 32 0 24.8365 0 16C0 7.16346 7.16346 0 16 0Z" fill="url(#paint0_linear_12_856)"></path>
+                        <path d="M18.0789 31.8658V19.5071H21.5631L22.0249 15.1574H18.0789L18.0848 12.9802C18.0848 11.8457 18.1926 11.2381 19.8221 11.2381H22.0005V6.8877H18.5156C14.3295 6.8877 12.8564 8.99765 12.8564 12.5465V15.1577H10.247V19.5078H12.8564V31.6905C13.873 31.8931 14.9239 32.0001 16 32.0001C16.6952 32.0001 17.3896 31.9552 18.0789 31.8658Z" fill="white"></path>
+                        <defs>
+                            <linearGradient id="paint0_linear_12_856" x1="16" y1="-0.291536" x2="16" y2="33.3645" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00B2FF"></stop>
+                                <stop offset="1" stop-color="#006AFF"></stop>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_871)">
+                            <path d="M24.3934 0.00170898H29.1429L18.7667 11.861L30.9735 27.9989H21.4157L13.9296 18.2113L5.36398 27.9989H0.611602L11.71 15.314L0 0.00170898H9.80037L16.5671 8.9479L24.3934 0.00170898ZM22.7265 25.1561H25.3582L8.37045 2.69516H5.54629L22.7265 25.1561Z" fill="white"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_12_871">
+                                <rect width="30.9735" height="28" fill="white"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg width="47" height="32" viewBox="0 0 47 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M45.737 4.9964C45.2134 3.03268 43.6642 1.48374 41.6934 0.952823C38.1298 0 23.8316 0 23.8316 0C23.8316 0 9.54078 0 5.96985 0.952823C4.00632 1.47641 2.45718 3.02554 1.92627 4.9964C0.97345 8.56 0.97345 15.9999 0.97345 15.9999C0.97345 15.9999 0.97345 23.44 1.92627 27.0036C2.44986 28.9673 3.99899 30.5163 5.96985 31.0472C9.54078 32 23.8316 32 23.8316 32C23.8316 32 38.1298 32 41.6934 31.0472C43.6571 30.5236 45.206 28.9745 45.737 27.0036C46.6898 23.44 46.6898 16.0001 46.6898 16.0001C46.6898 16.0001 46.6898 8.56 45.737 4.9964Z" fill="#FF0000"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2645 22.8582L31.1407 15.9999L19.2645 9.14185V22.8582Z" fill="white"></path>
+                    </svg>
+                    <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_12_889)">
+                            <path d="M11.3579 16C11.3579 13.0546 13.745 10.6662 16.6904 10.6662C19.6358 10.6662 22.0242 13.0546 22.0242 16C22.0242 18.9454 19.6358 21.3338 16.6904 21.3338C13.745 21.3338 11.3579 18.9454 11.3579 16ZM8.47462 16C8.47462 20.5376 12.1528 24.2158 16.6904 24.2158C21.228 24.2158 24.9062 20.5376 24.9062 16C24.9062 11.4624 21.228 7.78419 16.6904 7.78419C12.1528 7.78419 8.47462 11.4624 8.47462 16ZM23.3115 7.45843C23.3113 7.83817 23.4238 8.20943 23.6346 8.52526C23.8455 8.84108 24.1452 9.08729 24.496 9.23275C24.8468 9.37821 25.2328 9.41639 25.6053 9.34246C25.9778 9.26852 26.32 9.0858 26.5886 8.81739C26.8572 8.54898 27.0402 8.20694 27.1144 7.83453C27.1887 7.46211 27.1508 7.07605 27.0056 6.72516C26.8604 6.37426 26.6145 6.0743 26.2988 5.8632C25.9832 5.65211 25.612 5.53935 25.2323 5.5392H25.2315C24.7225 5.53944 24.2344 5.74169 23.8744 6.10155C23.5144 6.4614 23.3119 6.94942 23.3115 7.45843ZM10.2264 29.0236C8.66649 28.9526 7.81862 28.6927 7.25517 28.4732C6.50816 28.1824 5.97517 27.836 5.41478 27.2764C4.8544 26.7168 4.50752 26.1843 4.21798 25.4373C3.99833 24.8741 3.73849 24.026 3.66758 22.466C3.59001 20.7795 3.57453 20.2729 3.57453 16.0001C3.57453 11.7274 3.59129 11.2221 3.66758 9.53421C3.73862 7.97427 4.00038 7.12781 4.21798 6.56294C4.5088 5.81594 4.85517 5.28294 5.41478 4.72256C5.9744 4.16218 6.50688 3.8153 7.25517 3.52576C7.81837 3.30611 8.66649 3.04627 10.2264 2.97536C11.913 2.89779 12.4196 2.8823 16.6904 2.8823C20.9613 2.8823 21.4684 2.89907 23.1563 2.97536C24.7163 3.0464 25.5627 3.30816 26.1276 3.52576C26.8746 3.8153 27.4076 4.16294 27.968 4.72256C28.5284 5.28218 28.874 5.81594 29.1648 6.56294C29.3844 7.12614 29.6443 7.97427 29.7152 9.53421C29.7928 11.2221 29.8083 11.7274 29.8083 16.0001C29.8083 20.2729 29.7928 20.7781 29.7152 22.466C29.6442 24.026 29.383 24.8739 29.1648 25.4373C28.874 26.1843 28.5276 26.7173 27.968 27.2764C27.4084 27.8355 26.8746 28.1824 26.1276 28.4732C25.5644 28.6929 24.7163 28.9527 23.1563 29.0236C21.4698 29.1012 20.9632 29.1167 16.6904 29.1167C12.4177 29.1167 11.9124 29.1012 10.2264 29.0236ZM10.0939 0.096896C8.39065 0.174464 7.22675 0.444544 6.2103 0.840064C5.15763 1.24851 4.26649 1.79648 3.376 2.68557C2.4855 3.57466 1.93894 4.4672 1.53049 5.51987C1.13497 6.53696 0.864894 7.70022 0.787326 9.40352C0.708478 11.1095 0.69043 11.6549 0.69043 16C0.69043 20.3451 0.708478 20.8905 0.787326 22.5965C0.864894 24.2999 1.13497 25.463 1.53049 26.4801C1.93894 27.5322 2.48563 28.4257 3.376 29.3144C4.26637 30.2031 5.15763 30.7503 6.2103 31.1599C7.22867 31.5555 8.39065 31.8255 10.0939 31.9031C11.8008 31.9807 12.3453 32 16.6904 32C21.0355 32 21.5809 31.982 23.2869 31.9031C24.9903 31.8255 26.1535 31.5555 27.1706 31.1599C28.2226 30.7503 29.1144 30.2035 30.0049 29.3144C30.8954 28.4253 31.4408 27.5322 31.8504 26.4801C32.2459 25.463 32.5172 24.2998 32.5935 22.5965C32.6711 20.8892 32.6891 20.3451 32.6891 16C32.6891 11.6549 32.6711 11.1095 32.5935 9.40352C32.516 7.7001 32.2459 6.53632 31.8504 5.51987C31.4408 4.46784 30.8939 3.57606 30.0049 2.68557C29.1158 1.79507 28.2226 1.24851 27.1718 0.840064C26.1535 0.444544 24.9902 0.173184 23.2882 0.096896C21.5822 0.019328 21.0368 0 16.6917 0C12.3466 0 11.8008 0.018048 10.0939 0.096896Z" fill="url(#paint0_radial_12_889)"></path>
+                            <path d="M11.3579 16C11.3579 13.0546 13.745 10.6662 16.6904 10.6662C19.6358 10.6662 22.0242 13.0546 22.0242 16C22.0242 18.9454 19.6358 21.3338 16.6904 21.3338C13.745 21.3338 11.3579 18.9454 11.3579 16ZM8.47462 16C8.47462 20.5376 12.1528 24.2158 16.6904 24.2158C21.228 24.2158 24.9062 20.5376 24.9062 16C24.9062 11.4624 21.228 7.78419 16.6904 7.78419C12.1528 7.78419 8.47462 11.4624 8.47462 16ZM23.3115 7.45843C23.3113 7.83817 23.4238 8.20943 23.6346 8.52526C23.8455 8.84108 24.1452 9.08729 24.496 9.23275C24.8468 9.37821 25.2328 9.41639 25.6053 9.34246C25.9778 9.26852 26.32 9.0858 26.5886 8.81739C26.8572 8.54898 27.0402 8.20694 27.1144 7.83453C27.1887 7.46211 27.1508 7.07605 27.0056 6.72516C26.8604 6.37426 26.6145 6.0743 26.2988 5.8632C25.9832 5.65211 25.612 5.53935 25.2323 5.5392H25.2315C24.7225 5.53944 24.2344 5.74169 23.8744 6.10155C23.5144 6.4614 23.3119 6.94942 23.3115 7.45843ZM10.2264 29.0236C8.66649 28.9526 7.81862 28.6927 7.25517 28.4732C6.50816 28.1824 5.97517 27.836 5.41478 27.2764C4.8544 26.7168 4.50752 26.1843 4.21798 25.4373C3.99833 24.8741 3.73849 24.026 3.66758 22.466C3.59001 20.7795 3.57453 20.2729 3.57453 16.0001C3.57453 11.7274 3.59129 11.2221 3.66758 9.53421C3.73862 7.97427 4.00038 7.12781 4.21798 6.56294C4.5088 5.81594 4.85517 5.28294 5.41478 4.72256C5.9744 4.16218 6.50688 3.8153 7.25517 3.52576C7.81837 3.30611 8.66649 3.04627 10.2264 2.97536C11.913 2.89779 12.4196 2.8823 16.6904 2.8823C20.9613 2.8823 21.4684 2.89907 23.1563 2.97536C24.7163 3.0464 25.5627 3.30816 26.1276 3.52576C26.8746 3.8153 27.4076 4.16294 27.968 4.72256C28.5284 5.28218 28.874 5.81594 29.1648 6.56294C29.3844 7.12614 29.6443 7.97427 29.7152 9.53421C29.7928 11.2221 29.8083 11.7274 29.8083 16.0001C29.8083 20.2729 29.7928 20.7781 29.7152 22.466C29.6442 24.026 29.383 24.8739 29.1648 25.4373C28.874 26.1843 28.5276 26.7173 27.968 27.2764C27.4084 27.8355 26.8746 28.1824 26.1276 28.4732C25.5644 28.6929 24.7163 28.9527 23.1563 29.0236C21.4698 29.1012 20.9632 29.1167 16.6904 29.1167C12.4177 29.1167 11.9124 29.1012 10.2264 29.0236ZM10.0939 0.096896C8.39065 0.174464 7.22675 0.444544 6.2103 0.840064C5.15763 1.24851 4.26649 1.79648 3.376 2.68557C2.4855 3.57466 1.93894 4.4672 1.53049 5.51987C1.13497 6.53696 0.864894 7.70022 0.787326 9.40352C0.708478 11.1095 0.69043 11.6549 0.69043 16C0.69043 20.3451 0.708478 20.8905 0.787326 22.5965C0.864894 24.2999 1.13497 25.463 1.53049 26.4801C1.93894 27.5322 2.48563 28.4257 3.376 29.3144C4.26637 30.2031 5.15763 30.7503 6.2103 31.1599C7.22867 31.5555 8.39065 31.8255 10.0939 31.9031C11.8008 31.9807 12.3453 32 16.6904 32C21.0355 32 21.5809 31.982 23.2869 31.9031C24.9903 31.8255 26.1535 31.5555 27.1706 31.1599C28.2226 30.7503 29.1144 30.2035 30.0049 29.3144C30.8954 28.4253 31.4408 27.5322 31.8504 26.4801C32.2459 25.463 32.5172 24.2998 32.5935 22.5965C32.6711 20.8892 32.6891 20.3451 32.6891 16C32.6891 11.6549 32.6711 11.1095 32.5935 9.40352C32.516 7.7001 32.2459 6.53632 31.8504 5.51987C31.4408 4.46784 30.8939 3.57606 30.0049 2.68557C29.1158 1.79507 28.2226 1.24851 27.1718 0.840064C26.1535 0.444544 24.9902 0.173184 23.2882 0.096896C21.5822 0.019328 21.0368 0 16.6917 0C12.3466 0 11.8008 0.018048 10.0939 0.096896Z" fill="url(#paint1_radial_12_889)"></path>
+                        </g>
+                        <defs>
+                            <radialGradient id="paint0_radial_12_889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.94182 32.1512) scale(41.7733 41.7733)">
+                                <stop offset="0.09" stop-color="#FA8F21"></stop>
+                                <stop offset="0.78" stop-color="#D82D7E"></stop>
+                            </radialGradient>
+                            <radialGradient id="paint1_radial_12_889" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(20.097 33.5848) scale(32.9231)">
+                                <stop offset="0.64" stop-color="#8C3AAA" stop-opacity="0"></stop>
+                                <stop offset="1" stop-color="#8C3AAA"></stop>
+                            </radialGradient>
+                            <clipPath id="clip0_12_889">
+                                <rect width="32" height="32" fill="white" transform="translate(0.689789)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-white font-bold text-lg">Useful Links</h2>
+                <div class="mt-8 flex flex-col gap-2 text-gray-400">
+                    <a href="#">Home</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Animals</a>
+                    <a href="#">Foundation</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h1 class="text-lg font-bold text-white">Drop a Message</h1>
+                <div class="mt-8">
+                    <input class="bg-color-8 text-color-7 rounded-xl px-7 py-3" type="email" placeholder="Enter your email">
+                </div>
+                <div class="mt-4">
+                    <button class="text-white bg-color-3 border border-none rounded-xl px-10 lg:px-20 py-2 lg:py-3">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/pet.js"></script>
+
+
+</body></html>
